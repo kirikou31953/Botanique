@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mon Herbier | Classification et Monde des Plantes</title>
+  <meta name="description" content="Herbier numérique interactif : classification botanique, grands groupes végétaux et nomenclature binominale.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌿</text></svg>">
+  
+  <!-- Dépendances externes (Google Fonts et Font Awesome) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- EN-TÊTE -->
+  <header>
+    <nav class="nav">
+      <a href="#accueil" class="logo">
+        <i class="fa-solid fa-leaf"></i> Mon Herbier
+      </a>
+      <ul>
+        <li><a href="#classification"><i class="fa-solid fa-sitemap"></i> Classification</a></li>
+        <li><a href="#groupes"><i class="fa-solid fa-layer-group"></i> Grands groupes</a></li>
+        <li><a href="#catalogue"><i class="fa-solid fa-book-open"></i> Catalogue</a></li>
+        <li><a href="#apropos"><i class="fa-solid fa-user"></i> À propos</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ACCUEIL (HERO) -->
+    <div class="hero" id="accueil">
+      <div class="hero-badge">
+        <i class="fa-solid fa-seedling"></i> Botanique & Biodiversité
+      </div>
+      <h1>Découvrir le monde des plantes</h1>
+      <p>Classification, taxonomie, grands groupes végétaux et nomenclature binominale : explorez un herbier numérique illustré pour apprendre à reconnaître, observer et nommer les plantes.</p>
+      <div class="hero-actions">
+        <a href="#catalogue" class="btn"><i class="fa-solid fa-compass"></i> Explorer le catalogue</a>
+        <a href="#classification" class="btn btn-secondaire"><i class="fa-solid fa-graduation-cap"></i> Comprendre la classification</a>
+      </div>
+    </div>
+
+    <!-- CLASSIFICATION -->
+    <section id="classification">
+      <div class="section-titre">
+        <span class="sous-titre-pill">Taxonomie végétale</span>
+        <h2>La classification des plantes</h2>
+        <p class="sous-titre">Les botanistes classent les végétaux du niveau le plus large au plus précis. Découvrons la hiérarchie taxinomique complète avec l'exemple du <strong>Manguier</strong> :</p>
+      </div>
+
+      <div class="classification-layout">
+        <!-- Spécimen illustré -->
+        <div class="specimen-card">
+          <div class="specimen-img-box">
+            <img src="images/mangifera_indica.jpg" alt="Manguier (Mangifera indica)">
+            <span class="specimen-tag"><i class="fa-solid fa-camera"></i> Spécimen type</span>
+          </div>
+          <div class="specimen-info">
+            <h3>Manguier commun</h3>
+            <p class="sci"><em>Mangifera indica</em> L.</p>
+            <p class="desc">Arbre fruitier tropical majeur de la famille des Anacardiaceae, originaire d'Asie du Sud et largement cultivé sous les tropiques.</p>
+          </div>
+        </div>
+
+        <!-- Rangs taxonomiques -->
+        <div class="rangs">
+          <div class="rang">
+            <div class="rang-header"><small>1. Règne</small><i class="fa-solid fa-circle-check"></i></div>
+            <strong>Plantae</strong>
+            <em>(Organismes photosynthétiques et végétaux)</em>
+          </div>
+          <div class="rang">
+            <div class="rang-header"><small>2. Embranchement</small><i class="fa-solid fa-circle-check"></i></div>
+            <strong>Magnoliophyta</strong>
+            <em>(Angiospermes ou plantes à fleurs)</em>
+          </div>
+          <div class="rang">
+            <div class="rang-header"><small>3. Classe</small><i class="fa-solid fa-circle-check"></i></div>
+            <strong>Magnoliopsida</strong>
+            <em>(Dicotylédones vraies)</em>
+          </div>
+          <div class="rang">
+            <div class="rang-header"><small>4. Ordre</small><i class="fa-solid fa-circle-check"></i></div>
+            <strong>Sapindales</strong>
+            <em>(Ordre regroupant rutacées et anacardiacées)</em>
+          </div>
+          <div class="rang">
+            <div class="rang-header"><small>5. Famille</small><i class="fa-solid fa-circle-check"></i></div>
+            <strong>Anacardiaceae</strong>
+            <em>(Famille des manguiers, anacardiers, pistachiers)</em>
+          </div>
+          <div class="rang">
+            <div class="rang-header"><small>6. Genre</small><i class="fa-solid fa-circle-check"></i></div>
+            <strong>Mangifera</strong>
+            <em>(Genre des manguiers)</em>
+          </div>
+          <div class="rang rang-espece">
+            <div class="rang-header"><small>7. Espèce</small><i class="fa-solid fa-star"></i></div>
+            <strong><em>Mangifera indica</em></strong>
+            <em>(Espèce précise - Carl von Linné)</em>
+          </div>
+        </div>
+      </div>
+
+      <div class="note-box">
+        <i class="fa-solid fa-circle-info"></i>
+        <div>
+          <strong>Règle de nomenclature binominale :</strong> 
+          Chaque plante possède un nom scientifique unique international en deux termes latins : 
+          le <em>Genre</em> avec majuscule initiale, suivi de l'<em>épithète spécifique</em> en minuscules, le tout toujours typographié en <em>italique</em> (ex. <em>Mangifera indica</em>).
+        </div>
+      </div>
+    </section>
+
+    <!-- GRANDS GROUPES -->
+    <section id="groupes">
+      <div class="section-titre">
+        <span class="sous-titre-pill">Morphologie & Évolution</span>
+        <h2>Les quatre grands groupes de plantes</h2>
+        <p class="sous-titre">Le règne végétal se structure en quatre ensembles majeurs selon trois critères évolutifs clés : la présence de vaisseaux conducteurs (sève), de graines et de fleurs/fruits.</p>
+      </div>
+
+      <div class="groupes">
+        <!-- Bryophytes -->
+        <article class="groupe">
+          <div class="groupe-img-wrapper">
+            <img src="images/bryophytes.jpg" alt="Bryophytes (Mousses)" loading="lazy">
+            <span class="groupe-badge">Non vasculaires</span>
+          </div>
+          <div class="groupe-content">
+            <div class="groupe-header">
+              <span class="groupe-ico">🍃</span>
+              <h3>Bryophytes</h3>
+            </div>
+            <p>Mousses, hépatiques et anthocérotes. Plantes archaïques sans racines ni vaisseaux conducteurs de sève, vivant en milieux humides et se reproduisant par <strong>spores</strong>.</p>
+            <ul class="groupe-traits">
+              <li><i class="fa-solid fa-xmark non"></i> Pas de vaisseaux</li>
+              <li><i class="fa-solid fa-xmark non"></i> Pas de graines</li>
+              <li><i class="fa-solid fa-xmark non"></i> Pas de fleurs</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- Ptéridophytes -->
+        <article class="groupe">
+          <div class="groupe-img-wrapper">
+            <img src="images/pteridophytes.jpg" alt="Ptéridophytes (Fougères)" loading="lazy">
+            <span class="groupe-badge">Vasculaires sans graines</span>
+          </div>
+          <div class="groupe-content">
+            <div class="groupe-header">
+              <span class="groupe-ico">🌿</span>
+              <h3>Ptéridophytes</h3>
+            </div>
+            <p>Fougères, prêles et lycopodes. Plantes dotées de véritables vaisseaux conducteurs (racines, tiges, frondes), mais sans graines ni fleurs. Reproduction par <strong>spores</strong>.</p>
+            <ul class="groupe-traits">
+              <li><i class="fa-solid fa-check oui"></i> Vaisseaux conducteurs</li>
+              <li><i class="fa-solid fa-xmark non"></i> Pas de graines</li>
+              <li><i class="fa-solid fa-xmark non"></i> Pas de fleurs</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- Gymnospermes -->
+        <article class="groupe">
+          <div class="groupe-img-wrapper">
+            <img src="images/gymnospermes.jpg" alt="Gymnospermes (Conifères)" loading="lazy">
+            <span class="groupe-badge">Graines nues</span>
+          </div>
+          <div class="groupe-content">
+            <div class="groupe-header">
+              <span class="groupe-ico">🌲</span>
+              <h3>Gymnospermes</h3>
+            </div>
+            <p>Pins, sapins, cycas et ginkgos. Plantes à graines « nues » (non enfermées dans un fruit), souvent regroupées en <strong>cônes</strong> (strobiles), à feuillage généralement persistant.</p>
+            <ul class="groupe-traits">
+              <li><i class="fa-solid fa-check oui"></i> Vaisseaux conducteurs</li>
+              <li><i class="fa-solid fa-check oui"></i> Graines (cônes)</li>
+              <li><i class="fa-solid fa-xmark non"></i> Pas de vraies fleurs</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- Angiospermes -->
+        <article class="groupe">
+          <div class="groupe-img-wrapper">
+            <img src="images/angiospermes.jpg" alt="Angiospermes (Plantes à fleurs)" loading="lazy">
+            <span class="groupe-badge">Fleurs & Fruits</span>
+          </div>
+          <div class="groupe-content">
+            <div class="groupe-header">
+              <span class="groupe-ico">🌸</span>
+              <h3>Angiospermes</h3>
+            </div>
+            <p>Plantes à fleurs et à graines enfermées dans un véritable <strong>fruit</strong>. C'est le groupe le plus diversifié de la planète (~90% des espèces actuelles), scindé en mono et dicotylédones.</p>
+            <ul class="groupe-traits">
+              <li><i class="fa-solid fa-check oui"></i> Vaisseaux conducteurs</li>
+              <li><i class="fa-solid fa-check oui"></i> Graines protégées</li>
+              <li><i class="fa-solid fa-check oui"></i> Vraies fleurs & fruits</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- CATALOGUE -->
+    <section id="catalogue">
+      <div class="section-titre">
+        <span class="sous-titre-pill">Inventaire botanique</span>
+        <h2>Catalogue des plantes</h2>
+        <p class="sous-titre">Recherchez une plante par son nom usuel, son nom binominal latin ou sa famille botanique, ou filtrez selon son grand groupe.</p>
+      </div>
+
+      <div class="outils">
+        <div class="recherche-wrapper">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="search" id="recherche" placeholder="Rechercher (ex: Mangifera, Poaceae, Baobab, Fougère...)">
+        </div>
+        <div class="filtre-wrapper">
+          <i class="fa-solid fa-filter"></i>
+          <select id="filtre">
+            <option value="tous">Tous les groupes (14)</option>
+            <option value="Bryophyte">Bryophytes (Mousses)</option>
+            <option value="Ptéridophyte">Ptéridophytes (Fougères)</option>
+            <option value="Gymnosperme">Gymnospermes (Conifères)</option>
+            <option value="Angiosperme">Angiospermes (Plantes à fleurs)</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="compteur-barre">
+        <span id="compteur">Affichage des plantes...</span>
+      </div>
+
+      <!-- Grille des fiches plantes -->
+      <div class="grille" id="grille"></div>
+
+      <!-- Message si vide -->
+      <div id="vide" class="vide-box">
+        <i class="fa-solid fa-seedling"></i>
+        <h3>Aucune plante ne correspond à votre recherche</h3>
+        <p>Essayez avec d'autres mots-clés ou réinitialisez le filtre de groupe.</p>
+        <button id="btn-reinit" class="btn btn-sm">Réinitialiser les filtres</button>
+      </div>
+    </section>
+
+    <!-- À PROPOS -->
+    <section id="apropos">
+      <div class="apropos">
+        <div class="apropos-entete">
+          <div class="apropos-avatar">
+            <i class="fa-solid fa-user-graduate"></i>
+          </div>
+          <div>
+            <h2>À propos de Samuel & de ce projet</h2>
+            <p class="apropos-role">Passionné de botanique & Développeur Web</p>
+          </div>
+        </div>
+        <p>Bienvenue sur mon herbier numérique ! Ce site a été conçu pour documenter la richesse du règne végétal, comprendre la classification scientifique moderne et valoriser les espèces locales et tropicales.</p>
+        <p>Vous souhaitez échanger sur la botanique, proposer de nouvelles fiches d'espèces ou collaborer sur la création d'un site web sur mesure ? N'hésitez pas à me contacter !</p>
+        <div class="contact">
+          <a class="btn btn-whatsapp" href="https://wa.me/2290162000592" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-whatsapp"></i> Me contacter sur WhatsApp (+229 01 62 00 05 92)
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- MODAL DE VISUALISATION DÉTAILLÉE DU SPÉCIMEN -->
+  <div id="modal-plante" class="modal-overlay" style="display:none;" aria-hidden="true">
+    <div class="modal-contenu" role="dialog" aria-modal="true">
+      <button class="modal-fermer" id="modal-fermer" aria-label="Fermer"><i class="fa-solid fa-xmark"></i></button>
+      <div class="modal-layout">
+        <div class="modal-img-container">
+          <img id="modal-img" src="" alt="">
+        </div>
+        <div class="modal-details">
+          <span class="modal-groupe-badge" id="modal-groupe"></span>
+          <h2 id="modal-nom"></h2>
+          <p class="modal-sci" id="modal-sci"></p>
+          <div class="modal-tags" id="modal-tags"></div>
+          <div class="modal-sep"></div>
+          <h4>Description botanique</h4>
+          <p class="modal-desc" id="modal-desc"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PIED DE PAGE -->
+  <footer>
+    <div class="footer-contenu">
+      <p>© <span id="annee"></span> <strong>Mon Herbier</strong> — Créé avec passion par Samuel.</p>
+      <p class="footer-sub">Classification biologique selon la nomenclature internationale APG IV et Linné.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
