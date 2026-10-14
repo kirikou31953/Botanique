@@ -1,0 +1,23 @@
+{
+  "name": "mon-herbier-botanique",
+  "version": "1.0.0",
+  "description": "Herbier numérique et guide de classification des plantes",
+  "main": "index.html",
+  "scripts": {
+    "start": "powershell -ExecutionPolicy Bypass -File ./server.ps1",
+    "serve": "powershell -ExecutionPolicy Bypass -File ./server.ps1"
+  },
+  "keywords": [
+    "botanique",
+    "plantes",
+    "classification",
+    "herbier",
+    "taxonomie",
+    "angiospermes",
+    "gymnospermes",
+    "pteridophytes",
+    "bryophytes"
+  ],
+  "author": "Samuel",
+  "license": "MIT"
+}

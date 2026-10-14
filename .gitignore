@@ -1,0 +1,5 @@
+# Fichiers journaux et temporaires
+*.log
+.DS_Store
+Thumbs.db
+desktop.ini
